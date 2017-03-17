@@ -29,6 +29,7 @@ RedactorPlugins.alignment = function()
         },
         removeAlign: function()
         {
+            this.block.removeClass('text-left');
             this.block.removeClass('text-center');
             this.block.removeClass('text-right');
         },
@@ -36,6 +37,7 @@ RedactorPlugins.alignment = function()
         {
             this.buffer.set();
             this.alignment.removeAlign();
+            this.block.addClass('text-left');
         },
         setCenter: function()
         {
